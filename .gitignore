@@ -4,3 +4,6 @@
 /*.xcodeproj
 xcuserdata
 .swiftpm
+Example/Pods/
+Example/Podfile.lock
+Example/*.xcworkspace
