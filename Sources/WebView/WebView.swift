@@ -107,7 +107,12 @@ public struct WebView: View, UIViewRepresentable {
         }
         
         func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: any Error) {
+            print("页面加载失败-didFail: \(error)")
             didFail?(webView, navigation, error)
+        }
+        
+        func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: any Error) {
+            print("页面加载失败-didFailProvisionalNavigation: \(error)")
         }
         
         func webView(
@@ -119,6 +124,7 @@ public struct WebView: View, UIViewRepresentable {
         }
         
         func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
+            print("页面进程崩溃-webViewWebContentProcessDidTerminate")
             webContentProcessDidTerminate?(webView)
         }
         
