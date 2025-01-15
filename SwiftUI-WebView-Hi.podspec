@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftUI-WebView-Hi'
-  s.version          = '0.3.0.1'
+  s.version          = '0.3.0.2'
   s.summary          = 'A SwiftUI component to use WKWebView'
   s.description      = <<-DESC
 						A SwiftUI component to use WKWebView.
